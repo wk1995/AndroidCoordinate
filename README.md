@@ -12,11 +12,14 @@ android 里面的各种Coordinate
 - View.getLocationInWindow(int[] position);获取View**左上角**相对于整个屏幕**左上角**的坐标。
 - View.getLocationInWindow(int[] position);获取View左上角相对于Window**左上角**的坐标。跟getLocationOnScreen相比，只有弹出窗口才有区别，如下图所示：
 View.getParent可以获取view的父容器，得到的是ViewParent这个接口
-![image](https://note.youdao.com/favicon.ico)
+
+![image](https://github.com/wk1995/AndroidCoordinate/blob/master/image/clipboard.png)
 #### 3. 总结：
 - 对于View来说，除了getLocationInWindow，getLocationInWindow这两个方法，其他的都是相对于父容器**左上角**的坐标的相对坐标
-![image](https://note.youdao.com/favicon.ico)
+
+![image](https://github.com/wk1995/AndroidCoordinate/blob/master/image/CoordinateOfView.png)
 - 对于MotionEvent来说，加了Raw的就是相对屏幕左上角的坐标了
-![image](https://note.youdao.com/favicon.ico)
+
+![image](https://github.com/wk1995/AndroidCoordinate/blob/master/image/CoordinateOfMotionEvent.png)
 #### 4. 博客
 - https://blog.csdn.net/qq_33882671/article/details/79902108
